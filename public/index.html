@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>MyVinyls</title>
+</head>
+<!-- STARTING POINT -->
+<body>
+    <div id="header">
+        <div id="my-vinyls">
+                <h1>MyVinyls</h1>
+                <!-- <h3>A database for your vinyl collection</h3> -->
+        </div>
+        <button type="button" id="logoff" style="display:none;">Logoff</button>
+    </div>
+    <p id="message"></p>
+    <div id="login-register" style="display:none;">
+        <h3 id="login-title">Log In</h3>
+        <form id="login-form">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            <button type="button" id="login-button">Log in</button>
+        </form>
+        <p id="dont-have-acc">Don't have an account?</p>
+        <button type="button" id="register">Sign up</button>
+    </div>
+    <div id="register-div" style="display:none;">
+        <h3 id="register-title">Sign Up</h3>
+        <form id="register-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email1">Email:</label>
+                <input type="email" id="email1">
+            </div>
+            <div>
+                <label for="password1">Password:</label>
+                <input type="password" id="password1">
+            </div>
+            <div>
+                <label for="password2">Confirm Password:</label>
+                <input type="password" id="password2">
+            </div>
+            <button type="button" id="register-button">Register</button>
+            <button type="button" id="register-cancel">Cancel</button>
+        </form>
+    </div>
+    <div id="vinyls" style="display:none;">
+        <p id="vinyls-message"></p>
+        <table id="vinyls-table" style="display:none;">
+            <tr id="vinyls-table-header">
+                <th class="head">Album Title</th>
+                <th class="head">Artist Name</th>
+                <th class="head">Vinyl Color</th>
+                <th class="head">Date Obtained</th>
+                <th class="head">Pressing</th>
+                <th class="head">Cost</th>
+                <th class="head">Catalog</th>
+                <th class="head" colspan="2"></th>
+            </tr>
+        </table>
+        <button type="button" id="add-vinyl">Add Vinyl</button>
+    </div>
+    <div id="edit-vinyl" style="display:none;">
+        <form id="edit-form">
+            <div>
+                <label for="album-title">Album Title:</label>
+                <input type="text" id="album-title">
+            </div>
+            <div>
+                <label for="artist-name">Artist Name:</label>
+                <input type="text" id="artist-name">
+            </div>
+            <div>
+                <label for="vinyl-color">Vinyl Color:</label>
+                <input type="text" id="vinyl-color">
+            </div>
+            <div>
+                <label for="date-obtained">Date Obtained:</label>
+                <input type="date" id="date-obtained">
+            </div>
+            <div>
+                <label for="pressing">Pressing:</label>
+                <select id="pressing">
+                    <option value="Original Pressing">Original Pressing</option>
+                    <option value="Limited Edition">Limited Edition</option>
+                    <option value="Limited Edition/Signed">Limited Edition/Signed</option>
+                </select>
+            </div>
+            <div>
+                <label for="cost">Cost:</label>
+                <input type="number" id="cost">
+            </div>
+            <div>
+                <label for="catalog">Catalog:</label>
+                <input type="text" id="catalog">
+            </div>
+            <button type="button" id="adding-vinyl">Add</button>
+            <button type="button" id="edit-cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="./vinyls.js"></script>
+</body>
+</html>

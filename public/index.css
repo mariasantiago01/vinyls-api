@@ -1,0 +1,208 @@
+
+body {
+    background-image: url('vinyls.png');
+    color: white;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40%;
+    color: #3a1324;
+    background-color:  #fef8f3;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+p#message {
+    display: flex;
+    color: #f4dcd3;
+    border-radius: 3px;
+    padding: 10px;
+    justify-content:space-evenly;
+
+}
+
+/* Login - Register */
+
+#login-register {
+    color: black;
+    background-color: #fef8f3;
+    border-radius: 3%;
+    display: block;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 70%;
+}
+#login-title {
+    display: flex;
+    justify-content: space-around;
+}
+#login-form {
+    display: table-caption;
+}
+
+#login-button {
+    margin-top: 8%;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+#dont-have-acc {
+   padding: 1%;
+}
+#register-title {
+    display: flex;
+    justify-content: space-around;
+}
+#register {
+    margin-top: -3%;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 5%;
+}
+
+/* Register */
+#register-div {
+    color: black;
+    background-color: #fef8f3;
+    border-radius: 3%;
+    display: block;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 70%;
+}
+#register-form {
+    display: table-caption;
+    margin-bottom: 20px;
+}
+#register-button {
+    margin-top: 20px;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 6%;
+}
+#register-cancel {
+    margin-top: 20px;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 6%;
+}
+
+
+/* Homepage */
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 114%;
+}
+#logoff {
+    display: block;
+    color: #3a1324;
+    background-color: #fef8f3;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+p#vinyls-message {
+    display: flex;
+    color:#3a1324;
+    border-radius: 3px;
+    padding: 4px;
+    justify-content:space-evenly;
+
+}
+#vinyls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fef8f3;
+    border-radius: 8px;
+}
+
+#vinyls-table-header {
+    display: table-row-group;
+    background-color:#3a1324;
+    color:#fef8f3;
+    padding: 10px;
+    padding-left: 20px;
+    /* width: 100%; */
+    margin-left: -10px;
+    margin-right: -10px;
+    border-color: #3a1324;
+}
+.head {
+    display: flexbox;
+}
+#vinyls-table {
+    display: table-row-group;
+    background-color: #fef8f3;
+    color: black;
+    border-radius: 1%;
+    margin: 10px;
+    border-color: #3a1324
+
+}
+th {
+    padding: 10px;
+}
+button {
+    margin-top: 5%;
+    background-color: #fef8f3;
+    color:#3a1324;
+    border:#3a1324 solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+#add-vinyl {
+    margin-top: 5%;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+}
+/* Edit Vinyl */
+#edit-vinyl {
+    color: black;
+    background-color: #fef8f3;
+    border-radius: 3%;
+    padding: 15%;
+    margin: -20px;
+}
+#edit-form {
+    display: table-caption;
+}
+#adding-vinyl {
+    margin-top: 5%;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 6%;
+}
+#edit-cancel {
+    margin-top: 5%;
+    background-color: #3a1324;
+    color: white;
+    border: #3a1324;
+    border-radius: 6%;
+    padding: 6%;
+}

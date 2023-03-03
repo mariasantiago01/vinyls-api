@@ -19,12 +19,12 @@ const VinylSchema = new mongoose.Schema({
     },
     dateObtained: {
         type: Date,
-        required: [true, 'Please provide the date the vinyl was acquired']
+        required: false,
     },
     pressing:{
         type:String, 
-        enum:['Original pressing', 'Limited Edition', 'Limited Edition/Signed'],
-        default: 'Original pressing'
+        enum:['Original Pressing', 'Limited Edition', 'Limited Edition/Signed'],
+        default: 'Original Pressing'
     },
     cost:{
         type: Number, 
