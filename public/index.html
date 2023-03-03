@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>MyVinyl Collection</title>
+    <title>MyVinyls</title>
 </head>
 <!-- STARTING POINT -->
 <body>
-    <h1>MyVinyl Collection</h1>
-    <h3>A database for your vinyl collection</h3>
-    <button type="button" id="logoff" style="display:none;">Logoff</button>
-    <hr>
+    <div id="header">
+        <div id="my-vinyls">
+                <h1>MyVinyls</h1>
+                <!-- <h3>A database for your vinyl collection</h3> -->
+        </div>
+        <button type="button" id="logoff" style="display:none;">Logoff</button>
+    </div>
     <p id="message"></p>
-    <hr>
     <div id="login-register" style="display:none;">
-        <h3>Log In</h3>
-        <form>
+        <h3 id="login-title">Log In</h3>
+        <form id="login-form">
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email">
@@ -27,11 +29,12 @@
             </div>
             <button type="button" id="login-button">Log in</button>
         </form>
-        <p>Don't have an account?</p>
-        <button type="button" id="register">Sign Up</button>
+        <p id="dont-have-acc">Don't have an account?</p>
+        <button type="button" id="register">Sign up</button>
     </div>
     <div id="register-div" style="display:none;">
-        <form>
+        <h3 id="register-title">Sign Up</h3>
+        <form id="register-form">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name">
@@ -56,20 +59,20 @@
         <p id="vinyls-message"></p>
         <table id="vinyls-table" style="display:none;">
             <tr id="vinyls-table-header">
-                <th>Album Title</th>
-                <th>Artist Name</th>
-                <th>Vinyl Color</th>
-                <th>Date Obtained</th>
-                <th>Pressing</th>
-                <th>Cost</th>
-                <th>Catalog</th>
-                <th colspan="2"></th>
+                <th class="head">Album Title</th>
+                <th class="head">Artist Name</th>
+                <th class="head">Vinyl Color</th>
+                <th class="head">Date Obtained</th>
+                <th class="head">Pressing</th>
+                <th class="head">Cost</th>
+                <th class="head">Catalog</th>
+                <th class="head" colspan="2"></th>
             </tr>
         </table>
         <button type="button" id="add-vinyl">Add Vinyl</button>
     </div>
     <div id="edit-vinyl" style="display:none;">
-        <form>
+        <form id="edit-form">
             <div>
                 <label for="album-title">Album Title:</label>
                 <input type="text" id="album-title">
