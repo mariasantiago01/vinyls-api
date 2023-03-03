@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>MyVinyl Collection</title>
+</head>
+<!-- STARTING POINT -->
+<body>
+    <h1>MyVinyl Collection</h1>
+    <h3>A database for your vinyl collection</h3>
+    <button type="button" id="logoff" style="display:none;">Logoff</button>
+    <hr>
+    <p id="message"></p>
+    <hr>
+    <div id="login-register" style="display:none;">
+        <h3>Log In</h3>
+        <form>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            <button type="button" id="login-button">Log in</button>
+        </form>
+        <p>Don't have an account?</p>
+        <button type="button" id="register">Sign Up</button>
+    </div>
+    <div id="register-div" style="display:none;">
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email1">Email:</label>
+                <input type="email" id="email1">
+            </div>
+            <div>
+                <label for="password1">Password:</label>
+                <input type="password" id="password1">
+            </div>
+            <div>
+                <label for="password2">Confirm Password:</label>
+                <input type="password" id="password2">
+            </div>
+            <button type="button" id="register-button">Register</button>
+            <button type="button" id="register-cancel">Cancel</button>
+        </form>
+    </div>
+    <div id="vinyls" style="display:none;">
+        <p id="vinyls-message"></p>
+        <table id="vinyls-table" style="display:none;">
+            <tr id="vinyls-table-header">
+                <th>Album Title</th>
+                <th>Artist Name</th>
+                <th>Vinyl Color</th>
+                <th>Date Obtained</th>
+                <th>Pressing</th>
+                <th>Cost</th>
+                <th>Catalog</th>
+                <th colspan="2"></th>
+            </tr>
+        </table>
+        <button type="button" id="add-vinyl">Add Vinyl</button>
+    </div>
+    <div id="edit-vinyl" style="display:none;">
+        <form>
+            <div>
+                <label for="album-title">Album Title:</label>
+                <input type="text" id="album-title">
+            </div>
+            <div>
+                <label for="artist-name">Artist Name:</label>
+                <input type="text" id="artist-name">
+            </div>
+            <div>
+                <label for="vinyl-color">Vinyl Color:</label>
+                <input type="text" id="vinyl-color">
+            </div>
+            <div>
+                <label for="date-obtained">Date Obtained:</label>
+                <input type="date" id="date-obtained">
+            </div>
+            <div>
+                <label for="pressing">Pressing:</label>
+                <select id="pressing">
+                    <option value="Original Pressing">Original Pressing</option>
+                    <option value="Limited Edition">Limited Edition</option>
+                    <option value="Limited Edition/Signed">Limited Edition/Signed</option>
+                </select>
+            </div>
+            <div>
+                <label for="cost">Cost:</label>
+                <input type="number" id="cost">
+            </div>
+            <div>
+                <label for="catalog">Catalog:</label>
+                <input type="text" id="catalog">
+            </div>
+            <button type="button" id="adding-vinyl">Add</button>
+            <button type="button" id="edit-cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="./vinyls.js"></script>
+</body>
+</html>
