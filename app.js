@@ -35,6 +35,7 @@ app.use(cors())
 app.use(xss())
 
 // Public folder
+app.use(express.static('./public'))
 
 // Routes
 app.use('/api/v1/auth', authRouter)

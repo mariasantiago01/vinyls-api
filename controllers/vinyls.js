@@ -27,7 +27,7 @@ const getVinyl = async (req, res) => {
 }
 const updateVinyl = async (req, res) => {
     const {
-        body:{albumTitle, artistName, vinylColor, dateObtained }, 
+        body:{albumTitle, artistName, vinylColor}, 
         user:{userId},
         params:{id: vinylId}
     } = req
@@ -38,8 +38,6 @@ const updateVinyl = async (req, res) => {
         throw new BadRequestError("The artist name field cannot be empty")
     } else if ( vinylColor === "" ) {
         throw new BadRequestError("The vinyl color field cannot be empty")
-    } else if ( dateObtained === "" ) {
-        throw new BadRequestError("The date obtained field cannot be empty")
     }
 
 

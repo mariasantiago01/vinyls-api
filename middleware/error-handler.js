@@ -13,7 +13,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     }
 
     if (err.code && err.code === 11000) {
-        customError.msg = `The value for ${Object.keys(err.keyValue)} already exists. Please enter a different value.`
+        customError.msg = `The ${Object.keys(err.keyValue)} already exists. Please enter a different ${Object.keys(err.keyValue)}.`
         customError.statusCode = 400
     }
 
